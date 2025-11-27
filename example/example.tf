@@ -7,9 +7,12 @@ provider "google" {
 
 module "vpc" {
   source                                    = "./../"
-  name                                      = "app"
-  environment                               = "test"
+  name                                      = "vpc"
+  environment                               = "prod"
+  label_order                               = ["name", "environment"]
+  mtu                                       = 1460
   routing_mode                              = "REGIONAL"
-  mtu                                       = 1500
+  network_enabled                           = true
   network_firewall_policy_enforcement_order = "AFTER_CLASSIC_FIREWALL"
+  delete_default_routes_on_create           = false
 }
