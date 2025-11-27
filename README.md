@@ -40,7 +40,7 @@ Replace the 'source' attribute with the actual path to the module in your projec
 For detailed examples on how to use this module, please refer to the [Examples](https://github.com/sureshyadav76/terraform-google-vpc/tree/master/example) directory within this repository.
 
 ## License
-This Terraform module is provided under the **MIT** License. Please see the [LICENSE](..) file for more details.
+This Terraform module is provided under the **MIT** License. Please see the LICENSE file for more details.
 
 ## Author
 Your Name
